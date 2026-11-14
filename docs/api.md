@@ -3,13 +3,13 @@
 The generated reference documents the modules and signatures. This guide
 connects the main objects in a Hamiltonian-simulation calculation.
 
-| Stage | API | Role |
-| --- | --- | --- |
-| Represent terms | {py:class}`peropq.pauli_bitstring.PauliString`, {py:func}`peropq.pauli_bitstring.pauli_from_string` | Construct Pauli strings and attach scalar coefficients. |
-| Define the model | {py:class}`peropq.hamiltonian.Hamiltonian` | Store the term list and its separate coefficients. |
-| Choose an ansatz | {py:class}`peropq.unconstrained_variational_unitary.UnconstrainedVariationalUnitary` | Set layer count, timestep and independently tunable rotation angles. |
-| Optimize | {py:class}`peropq.optimizer.Optimizer` | Minimize a BCH objective or a small-system exact objective. |
-| Check evolution | {py:class}`peropq.ed_module.ExactDiagonalization` | Construct matrix evolution, apply it to a state and measure exact errors. |
+| Stage            | API                                                                                                 | Role                                                                      |
+| ---------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| Represent terms  | {py:class}`peropq.pauli_bitstring.PauliString`, {py:func}`peropq.pauli_bitstring.pauli_from_string` | Construct Pauli strings and attach scalar coefficients.                   |
+| Define the model | {py:class}`peropq.hamiltonian.Hamiltonian`                                                          | Store the term list and its separate coefficients.                        |
+| Choose an ansatz | {py:class}`peropq.unconstrained_variational_unitary.UnconstrainedVariationalUnitary`                | Set layer count, timestep and independently tunable rotation angles.      |
+| Optimize         | {py:class}`peropq.optimizer.Optimizer`                                                              | Minimize a BCH objective or a small-system exact objective.               |
+| Check evolution  | {py:class}`peropq.ed_module.ExactDiagonalization`                                                   | Construct matrix evolution, apply it to a state and measure exact errors. |
 
 ## Parameters and objectives
 
