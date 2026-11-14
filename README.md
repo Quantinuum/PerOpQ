@@ -28,7 +28,7 @@ pip install -r dev-tool-requirements.txt
 [Nox](https://nox.thea.codes/en/stable/) can be used to automate various development tasks running in isolated python environments.
 The following Nox sessions are provided:
 
-- `pre-commit`: run the configured pre-commit hooks within [.pre-commit-config.yaml](.pre-commit-config.yaml), this includes linting with black and pylint
+- `pre-commit`: run the configured pre-commit hooks within [.pre-commit-config.yaml](https://github.com/Quantinuum/PerOpQ/blob/main/.pre-commit-config.yaml), this includes linting with black and pylint
 - `mypy`: run type checks using mypy
 - `tests`: run the unit tests
 - `docs-build`: build the documentation
@@ -48,7 +48,7 @@ To set up the pre-commit hooks to run automatically on each commit run:
 nox -s pre-commit -- install
 ```
 
-Afterward, the [pre-configured hooks](.pre-commit-config.yaml) will run on all changed files in a commit and the commit will be
+Afterward, the [pre-configured hooks](https://github.com/Quantinuum/PerOpQ/blob/main/.pre-commit-config.yaml) will run on all changed files in a commit and the commit will be
 rejected if the hooks find errors. Some hooks will correct formatting issues automatically (but will still reject the commit, so that
 the `git commit` command will need to be repeated).
 

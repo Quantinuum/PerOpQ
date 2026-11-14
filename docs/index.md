@@ -10,4 +10,7 @@ hidden:
 maxdepth: 1
 ---
 
+getting_started
+api
+autoapi/index
 ```
